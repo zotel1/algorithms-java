@@ -1,6 +1,6 @@
 package algorithms;
 
-public class Insertion {
+public class NotacionOEjemploUno {
     public static void main(String[] args) {
         int []arr = {5, 3, 4, 8, 7, 5, 1, 2, 3}; // Big O de 1
         for (int j = 1; j < arr.length; j++) { // Big O de n

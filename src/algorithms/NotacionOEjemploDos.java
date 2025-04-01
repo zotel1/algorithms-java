@@ -1,6 +1,6 @@
 package algorithms;
 
-public class SumaEjemploUno {
+public class NotacionOEjemploDos {
     // Método para sumar los elementos de un arreglo
     public static int suma_arreglo(int arreglo[], int tam_arreglo){
 

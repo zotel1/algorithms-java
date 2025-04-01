@@ -1,6 +1,6 @@
 package algorithms;
 
-public class SumaEjemploDos {
+public class NotacionOEjemploTres {
 
     public static int miFuncion(int N){
         int a = 0; // =(!)
