@@ -5,8 +5,8 @@ public class NotacionOEjemploSeis {
     public static void main(String[] args) {
         int a = 0;
         int b = 0;
-        int M = 4;
-        int N = 5;
+        int N = 4;
+        int M = 5;
 
         // Nested loops
         for (int i = 0; i < N; i++) {
