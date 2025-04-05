@@ -24,7 +24,14 @@ public class EjemploUno {
 
         // Move pivot after smaller elements and
         // return its position
-        swap(arre, i + 1, high);
+        swap(arr, i + 1, high);
         return i + 1;
+    }
+
+    // Swap function
+    static void swap(int[] arr, int i, int j){
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
     }
 }
