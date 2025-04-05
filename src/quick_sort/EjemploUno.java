@@ -34,4 +34,18 @@ public class EjemploUno {
         arr[i] = arr[j];
         arr[j] = temp;
     }
+
+    // the QuickSort function implementation
+    static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+
+            // pi is the partition return indez of pivot
+            int pi = partition(arr, low, high);
+
+            // Recursion calls for smaller elements
+            // and greater or equals elements
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
+    }
 }
