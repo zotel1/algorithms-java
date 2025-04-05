@@ -48,4 +48,15 @@ public class EjemploUno {
             quickSort(arr, pi + 1, high);
         }
     }
+
+    public static void main(String[] args) {
+        int[] arr = {10, 7, 8, 9, 1, 5};
+        int n = arr.length;
+
+        quickSort(arr, 0, n - 1);
+
+        for (int val : arr) {
+            System.out.println(val + " ");
+        }
+    }
 }
