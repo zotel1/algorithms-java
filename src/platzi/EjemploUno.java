@@ -1,6 +1,8 @@
 package platzi;
 
-/*En una lengua alienígena, sorprendentemente,
+/*
+VerifiingAlienDictionary
+En una lengua alienígena, sorprendentemente,
 también utilizan las letras del español, pero
 posiblemente en un orden diferente, una permutación
 de nuestro alfabeto.
@@ -21,7 +23,7 @@ orden_alfabeto = "hlacdefgijkmnopqrstuvwxyz"         -------------> Verdadero*/
 import java.util.HashMap;
 import java.util.Map;
 
-public class VerifyingAlienDictionary {
+public class EjemploUno {
     public static boolean isAlienSorted(String[] words, String order) {
         Map<Character, Integer> dict = new HashMap<Character, Integer>();
         for (int index = 0; index < 26; index++) {
