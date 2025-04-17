@@ -1,6 +1,8 @@
 package matrices.faciles;
 
 import javax.imageio.stream.ImageInputStream;
+// Enfoque iterativo: O(n) tiempo y O(1) espacio
+
 
 public class EjemploUno {
 
