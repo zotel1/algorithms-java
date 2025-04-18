@@ -2,6 +2,8 @@ package matrices.faciles;
 
 import java.util.Arrays;
 
+// la mayoria de los lenguajes tienen una funcion incorporada de tipo max() relevante para encontrar el elemento maximo
+
 public class EjemploDos {
 
     static int largest(int[] arr) {
