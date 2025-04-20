@@ -1,4 +1,4 @@
-package matrices.faciles;
+package matrices.largestelementinanarray;
 
 import java.util.Arrays;
 
