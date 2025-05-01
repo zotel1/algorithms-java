@@ -1,4 +1,4 @@
-package matrices.secondlargestelementinanarray;
+package matrices.easy.secondlargestelementinanarray;
 
 public class EjemploDos {
 

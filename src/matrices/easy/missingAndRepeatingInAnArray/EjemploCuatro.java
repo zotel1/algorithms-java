@@ -1,4 +1,4 @@
-package matrices.missingAndRepeatingInAnArray;
+package matrices.easy.missingAndRepeatingInAnArray;
 
 import java.util.ArrayList;
 

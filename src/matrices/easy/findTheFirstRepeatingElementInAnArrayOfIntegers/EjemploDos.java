@@ -1,4 +1,4 @@
-package matrices.findTheFirstRepeatingElementInAnArrayOfIntegers;
+package matrices.easy.findTheFirstRepeatingElementInAnArrayOfIntegers;
 
 import java.util.HashSet;
 

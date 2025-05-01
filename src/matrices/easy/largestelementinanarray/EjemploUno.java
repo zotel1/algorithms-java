@@ -1,4 +1,4 @@
-package matrices.largestelementinanarray;
+package matrices.easy.largestelementinanarray;
 
 // Enfoque iterativo: O(n) tiempo y O(1) espacio
 

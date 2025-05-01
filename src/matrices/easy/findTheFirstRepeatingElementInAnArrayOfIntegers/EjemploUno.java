@@ -1,4 +1,4 @@
-package matrices.findTheFirstRepeatingElementInAnArrayOfIntegers;
+package matrices.easy.findTheFirstRepeatingElementInAnArrayOfIntegers;
 
 public class EjemploUno {
 

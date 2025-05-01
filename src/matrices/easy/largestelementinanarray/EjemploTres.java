@@ -1,4 +1,4 @@
-package matrices.largestelementinanarray;
+package matrices.easy.largestelementinanarray;
 
 public class EjemploTres {
 
