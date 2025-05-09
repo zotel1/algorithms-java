@@ -1,4 +1,4 @@
-package matrices.findTheMissingNumber;
+package matrices.easy.findTheMissingNumber;
 
 // Encuentra el numero que falta
 public class EjemploUno {

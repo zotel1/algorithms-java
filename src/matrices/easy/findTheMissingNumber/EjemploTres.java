@@ -1,4 +1,4 @@
-package matrices.findTheMissingNumber;
+package matrices.easy.findTheMissingNumber;
 
 public class EjemploTres {
 

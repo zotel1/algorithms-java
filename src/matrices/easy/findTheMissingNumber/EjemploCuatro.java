@@ -1,7 +1,4 @@
-package matrices.findTheMissingNumber;
-
 public class EjemploCuatro {
-
     public static int missingNum(int[] arr) {
         int n = arr.length + 1;
         int xor1 = 0, xor2 = 0;
@@ -19,6 +16,5 @@ public class EjemploCuatro {
         int[] arr = {8, 2, 4, 5, 3, 7, 1 };
         int res = missingNum(arr);
         System.out.println(res);
-
     }
 }

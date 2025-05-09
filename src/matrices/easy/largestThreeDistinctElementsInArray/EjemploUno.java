@@ -1,4 +1,4 @@
-package matrices.largestThreeDistinctElementsInArray;
+package matrices.easy.largestThreeDistinctElementsInArray;
 
 import java.util.ArrayList;
 import java.util.List;
