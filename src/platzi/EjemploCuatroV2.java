@@ -8,7 +8,7 @@ public class EjemploCuatroV2 {
         int areaMaxima = 0;
 
         while (izquierda < derecha) {
-            int areaActual = (derecha - izquierda + 1) * Math.min(alturas[izquierda], alturas[derecha]);
+            int areaActual = (derecha - izquierda ) * Math.min(alturas[izquierda], alturas[derecha]);
             areaMaxima = Math.max( areaActual, areaMaxima );
             if (alturas[izquierda] < alturas[derecha]) {
                 izquierda += 1;
