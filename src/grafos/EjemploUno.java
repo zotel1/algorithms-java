@@ -1,6 +1,6 @@
 package grafos;
 
-public class GrafoNoDirigido {
+public class EjemploUno {
 
     public static void addEdge(int[][] mat, int i, int j) {
         mat[i][j] = 1;
