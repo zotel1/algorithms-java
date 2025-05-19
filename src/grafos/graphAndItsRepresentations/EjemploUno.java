@@ -1,4 +1,4 @@
-package grafos;
+package grafos.graphAndItsRepresentations;
 
 public class EjemploUno {
 
