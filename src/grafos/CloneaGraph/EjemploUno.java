@@ -11,7 +11,7 @@ que contienen nodos adyacentes al nodo actual.*/
 // Definition for a Node
 class Node {
     public int val;
-    public ArrayList<Node> neighbors;
+    public ArrayList<Nodee> neighbors;
 
     public Node() {
         neighbors = new ArrayList<>();
@@ -26,25 +26,25 @@ class Node {
 public class EjemploUno {
 
     // Clone the graph
-    public static Node cloneGraph(Node node) {
-        if (node == null) return null;
+    public static Nodee cloneGraph(Nodee nodee) {
+        if (nodee == null) return null;
 
-        Map<Node, Node> mp = new HashMap<>();
-        Queue<Node> q = new LinkedList<>();
+        Map<Nodee, Nodee> mp = new HashMap<>();
+        Queue<Nodee> q = new LinkedList<>();
 
         // Clone the starting node
-        Node clone = new Node(node.val);
-        mp.put(node, clone);
-        q.offer(node);
+        Nodee clone = new Nodee(nodee.val);
+        mp.put(nodee, clone);
+        q.offer(nodee);
 
         while (!q.isEmpty()) {
-            Node current = q.poll();
+            Nodee current = q.poll();
 
-            for (Node neighbor : current.neighbors) {
+            for (Nodee neighbor : current.neighbors) {
 
                 // Clone neighbor if it hasn't been cloned yet
                 if (!mp.containsKey(neighbor)) {
-                    mp.put(neighbor, new Node(neighbor.val));
+                    mp.put(neighbor, new Nodee(neighbor.val));
                     q.offer(neighbor);
                 }
 
@@ -53,31 +53,31 @@ public class EjemploUno {
             }
         }
 
-        return mp.get(node);
+        return mp.get(nodee);
     }
 
     // Build graph
-    public static Node buildGraph() {
-        Node node1 = new Node(0);
-        Node node2 = new Node(1);
-        Node node3 = new Node(2);
-        Node node4 = new Node(3);
+    public static Nodee buildGraph() {
+        Nodee nodee1 = new Nodee(0);
+        Nodee nodee2 = new Nodee(1);
+        Nodee nodee3 = new Nodee(2);
+        Nodee nodee4 = new Nodee(3);
 
-        node1.neighbors.addAll(new ArrayList<>
-                (Arrays.asList(node2, node3)));
-        node2.neighbors.addAll(new ArrayList<>
-                (Arrays.asList(node1, node3)));
-        node3.neighbors.addAll(new ArrayList<>
-                (Arrays.asList(node1, node2, node4)));
-        node4.neighbors.addAll(new ArrayList<>
-                (Arrays.asList(node3)));
+        nodee1.neighbors.addAll(new ArrayList<>
+                (Arrays.asList(nodee2, nodee3)));
+        nodee2.neighbors.addAll(new ArrayList<>
+                (Arrays.asList(nodee1, nodee3)));
+        nodee3.neighbors.addAll(new ArrayList<>
+                (Arrays.asList(nodee1, nodee2, nodee4)));
+        nodee4.neighbors.addAll(new ArrayList<>
+                (Arrays.asList(nodee3)));
 
-        return node1;
+        return nodee1;
     }
 
     // Compare two graphs for structure and value
-    public static boolean compareGraphs(Node n1, Node n2,
-                                        HashMap<Node, Node> visited) {
+    public static boolean compareGraphs(Nodee n1, Nodee n2,
+                                        HashMap<Nodee, Nodee> visited) {
         if (n1 == null || n2 == null)
             return n1 == n2;
 
@@ -90,8 +90,8 @@ public class EjemploUno {
             return false;
 
         for (int i = 0; i < n1.neighbors.size(); i++) {
-            Node neighbor1 = n1.neighbors.get(i);
-            Node neighbor2 = n2.neighbors.get(i);
+            Nodee neighbor1 = n1.neighbors.get(i);
+            Nodee neighbor2 = n2.neighbors.get(i);
 
             if (visited.containsKey(neighbor1)) {
                 if (visited.get(neighbor1) != neighbor2)
@@ -106,8 +106,8 @@ public class EjemploUno {
     }
 
     public static void main(String[] args) {
-        Node original = buildGraph();
-        Node cloned = cloneGraph(original);
+        Nodee original = buildGraph();
+        Nodee cloned = cloneGraph(original);
         boolean isEqual = compareGraphs(original, cloned,
                 new HashMap<>());
         System.out.println(isEqual ? "true" : "false");
