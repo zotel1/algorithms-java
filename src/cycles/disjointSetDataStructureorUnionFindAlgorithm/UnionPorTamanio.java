@@ -12,11 +12,11 @@ O(n) porque necesitamos almacenar n elementos en la estructura de datos del conj
 
 import java.util.Arrays;
 
-class UnionFind {
+class UnionFindDos {
     private int[] Parent;
     private int[] Size;
 
-    public UnionFind(int n) {
+    public UnionFindDos(int n) {
         // Initialize Parent array
         Parent = new int[n];
         for (int i = 0; i < n; i++){
@@ -83,7 +83,7 @@ public class UnionPorTamanio {
     {
         // Example usage
         int n = 5;
-        UnionFind unionFind = new UnionFind(n);
+        UnionFindDos unionFind = new UnionFindDos(n);
 
         // Perform union operations
         unionFind.unionBySize(0, 1);
