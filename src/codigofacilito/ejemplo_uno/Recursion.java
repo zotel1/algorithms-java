@@ -1,4 +1,4 @@
-package codigofacilito;
+package codigofacilito.ejemplo_uno;
 /*Fibonacci: [0, 1, 1, 2, 3, 5, 8, 13...]
 *posiciones:  0, 1, 2, 3, 4, 5, 6, 7...*/
 public class Recursion {

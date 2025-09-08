@@ -1,4 +1,4 @@
-package codigofacilito;
+package codigofacilito.ejemplo_uno;
 
 /*
 * int nthFibonacci(int n) {

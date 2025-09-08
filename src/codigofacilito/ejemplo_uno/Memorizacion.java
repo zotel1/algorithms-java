@@ -1,6 +1,5 @@
-package codigofacilito;
+package codigofacilito.ejemplo_uno;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Memorizacion {
